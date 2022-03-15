@@ -13,7 +13,7 @@ def main():
     print("原价/折扣价："+str(int(str1['data']['market_price'])/100)+'/'+str(int(str1['data']['price'])/100))
     print("详细内容:"+str1['data']['share_content'])
     print('-----------"' + str1['data']['name'] + '"的价格波动-----------')
-    try:  # 终止程序时，不会报错
+    try:
         while (True):
             EndPrint = strftime('%Y' + '-' + '%m' + '-' + '%d' + ' %H:%M:%S,价格为' + str(int(str1['data']['price'])/100))
             print(EndPrint)
