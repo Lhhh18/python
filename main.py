@@ -10,7 +10,7 @@ def main():
     str1=json.loads(req.text)
     print('-----------商品：'+str1['data']['name']+'-----------')#商品名
     print('规格：'+str(int(str1['data']['price'])/100))#规格
-    print("原价/折扣价："+str(int(str1['data']['market_price'])/100)+'/'+str(int(str1['data']['price'])/100))
+    print("原价/折扣价："+str(int(str1['data']['market_price'])/100)+'/'+str(int(str1['data']['price'])/100))#原价/折扣价
     print("详细内容:"+str1['data']['share_content'])
     print('-----------"' + str1['data']['name'] + '"的价格波动-----------')
     try:
